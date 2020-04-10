@@ -10,9 +10,16 @@ let arrAvg = (arr) => {
 };
 
 //Req. 3c
-let arrMax = (arr) ==> {
-  //
+let arrMax = (arr) => {
+  let maxNum = arr[0];
+  arr.forEach(i => {
+    if (i > maxNum) {
+      maxNum = i;
+    }
+  })
+  return maxNum;
 };
+
 //=======================================
 let fruits = ["Apple", "Orange", "Plum"];
 let maxSoFar = fruits[0].length;
