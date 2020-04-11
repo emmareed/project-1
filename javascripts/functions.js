@@ -20,6 +20,17 @@ let arrMax = (arr) => {
   return maxNum;
 };
 
+//Req. 3d
+let sumEvens = (arr) => {
+  let sum = 0;
+  for (i of arr) {
+    if(i % 2 == 0){
+      sum = sum + i;
+    }
+  }
+  return sum;
+}
+
 //=======================================
 let fruits = ["Apple", "Orange", "Plum"];
 let maxSoFar = fruits[0].length;
